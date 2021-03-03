@@ -1,0 +1,10 @@
+
+
+target 'testAutoLayout' do
+  use_frameworks!
+  
+  pod 'Masonry'
+
+  
+end
+

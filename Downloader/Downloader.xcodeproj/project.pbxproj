@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0312067E25AEC24400120B72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0312067D25AEC24400120B72 /* AppDelegate.m */; };
+		0312068125AEC24400120B72 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0312068025AEC24400120B72 /* SceneDelegate.m */; };
+		0312068425AEC24400120B72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0312068325AEC24400120B72 /* ViewController.m */; };
+		0312068725AEC24400120B72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0312068525AEC24400120B72 /* Main.storyboard */; };
+		0312068925AEC24600120B72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0312068825AEC24600120B72 /* Assets.xcassets */; };
+		0312068C25AEC24600120B72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0312068A25AEC24600120B72 /* LaunchScreen.storyboard */; };
+		0312068F25AEC24600120B72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0312068E25AEC24600120B72 /* main.m */; };
+		0312069925AEC24700120B72 /* DownloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0312069825AEC24700120B72 /* DownloaderTests.m */; };
+		031206A425AEC24700120B72 /* DownloaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 031206A325AEC24700120B72 /* DownloaderUITests.m */; };
+		039B1F2E25BAD1590028C4FE /* YCDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 039B1F2D25BAD1590028C4FE /* YCDownloader.m */; };
+		039B1F3725BAD1780028C4FE /* YCDownloaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 039B1F3625BAD1780028C4FE /* YCDownloaderManager.m */; };
+		039B1F4225BAD46F0028C4FE /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 039B1F3F25BAD46F0028C4FE /* SVProgressHUD.m */; };
+		039B1F4325BAD46F0028C4FE /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 039B1F4025BAD46F0028C4FE /* SVIndefiniteAnimatedView.m */; };
+		039B1F4425BAD46F0028C4FE /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 039B1F4125BAD46F0028C4FE /* SVProgressHUD.bundle */; };
+		DC9C21B2AB1F39DADDA124F6 /* Pods_Downloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25333F61192258ED31952A0A /* Pods_Downloader.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0312069525AEC24700120B72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0312067125AEC24400120B72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0312067825AEC24400120B72;
+			remoteInfo = Downloader;
+		};
+		031206A025AEC24700120B72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0312067125AEC24400120B72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0312067825AEC24400120B72;
+			remoteInfo = Downloader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0312067925AEC24400120B72 /* Downloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Downloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0312067C25AEC24400120B72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0312067D25AEC24400120B72 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0312067F25AEC24400120B72 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		0312068025AEC24400120B72 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		0312068225AEC24400120B72 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0312068325AEC24400120B72 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0312068625AEC24400120B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0312068825AEC24600120B72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0312068B25AEC24600120B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0312068D25AEC24600120B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0312068E25AEC24600120B72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0312069425AEC24700120B72 /* DownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0312069825AEC24700120B72 /* DownloaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloaderTests.m; sourceTree = "<group>"; };
+		0312069A25AEC24700120B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0312069F25AEC24700120B72 /* DownloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		031206A325AEC24700120B72 /* DownloaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloaderUITests.m; sourceTree = "<group>"; };
+		031206A525AEC24700120B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		039B1F2C25BAD1590028C4FE /* YCDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCDownloader.h; sourceTree = "<group>"; };
+		039B1F2D25BAD1590028C4FE /* YCDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCDownloader.m; sourceTree = "<group>"; };
+		039B1F3525BAD1780028C4FE /* YCDownloaderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCDownloaderManager.h; sourceTree = "<group>"; };
+		039B1F3625BAD1780028C4FE /* YCDownloaderManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCDownloaderManager.m; sourceTree = "<group>"; };
+		039B1F3C25BAD46F0028C4FE /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		039B1F3D25BAD46F0028C4FE /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		039B1F3E25BAD46F0028C4FE /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		039B1F3F25BAD46F0028C4FE /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		039B1F4025BAD46F0028C4FE /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		039B1F4125BAD46F0028C4FE /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		25333F61192258ED31952A0A /* Pods_Downloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Downloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ECAA11DC4F9F84020E0B6D2 /* Pods-Downloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Downloader.release.xcconfig"; path = "Target Support Files/Pods-Downloader/Pods-Downloader.release.xcconfig"; sourceTree = "<group>"; };
+		7EBBA3E82D1CC2F93F7F2DB8 /* Pods-Downloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Downloader.debug.xcconfig"; path = "Target Support Files/Pods-Downloader/Pods-Downloader.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0312067625AEC24400120B72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9C21B2AB1F39DADDA124F6 /* Pods_Downloader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0312069125AEC24700120B72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0312069C25AEC24700120B72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0312067025AEC24400120B72 = {
+			isa = PBXGroup;
+			children = (
+				0312067B25AEC24400120B72 /* Downloader */,
+				0312069725AEC24700120B72 /* DownloaderTests */,
+				031206A225AEC24700120B72 /* DownloaderUITests */,
+				0312067A25AEC24400120B72 /* Products */,
+				34CDCAA5DDF8E76356788E43 /* Pods */,
+				E3B00DAB4D313B5B1769D83E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0312067A25AEC24400120B72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0312067925AEC24400120B72 /* Downloader.app */,
+				0312069425AEC24700120B72 /* DownloaderTests.xctest */,
+				0312069F25AEC24700120B72 /* DownloaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0312067B25AEC24400120B72 /* Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				039B1F3B25BAD46F0028C4FE /* SVProgressHUD */,
+				039B1F2B25BACF530028C4FE /* YCDownloader */,
+				0312067C25AEC24400120B72 /* AppDelegate.h */,
+				0312067D25AEC24400120B72 /* AppDelegate.m */,
+				0312067F25AEC24400120B72 /* SceneDelegate.h */,
+				0312068025AEC24400120B72 /* SceneDelegate.m */,
+				0312068225AEC24400120B72 /* ViewController.h */,
+				0312068325AEC24400120B72 /* ViewController.m */,
+				0312068525AEC24400120B72 /* Main.storyboard */,
+				0312068825AEC24600120B72 /* Assets.xcassets */,
+				0312068A25AEC24600120B72 /* LaunchScreen.storyboard */,
+				0312068D25AEC24600120B72 /* Info.plist */,
+				0312068E25AEC24600120B72 /* main.m */,
+			);
+			path = Downloader;
+			sourceTree = "<group>";
+		};
+		0312069725AEC24700120B72 /* DownloaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				0312069825AEC24700120B72 /* DownloaderTests.m */,
+				0312069A25AEC24700120B72 /* Info.plist */,
+			);
+			path = DownloaderTests;
+			sourceTree = "<group>";
+		};
+		031206A225AEC24700120B72 /* DownloaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				031206A325AEC24700120B72 /* DownloaderUITests.m */,
+				031206A525AEC24700120B72 /* Info.plist */,
+			);
+			path = DownloaderUITests;
+			sourceTree = "<group>";
+		};
+		039B1F2B25BACF530028C4FE /* YCDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				039B1F2C25BAD1590028C4FE /* YCDownloader.h */,
+				039B1F2D25BAD1590028C4FE /* YCDownloader.m */,
+				039B1F3525BAD1780028C4FE /* YCDownloaderManager.h */,
+				039B1F3625BAD1780028C4FE /* YCDownloaderManager.m */,
+			);
+			path = YCDownloader;
+			sourceTree = "<group>";
+		};
+		039B1F3B25BAD46F0028C4FE /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				039B1F3C25BAD46F0028C4FE /* SVIndefiniteAnimatedView.h */,
+				039B1F3D25BAD46F0028C4FE /* SVProgressHUD.h */,
+				039B1F3E25BAD46F0028C4FE /* SVProgressHUD-Prefix.pch */,
+				039B1F3F25BAD46F0028C4FE /* SVProgressHUD.m */,
+				039B1F4025BAD46F0028C4FE /* SVIndefiniteAnimatedView.m */,
+				039B1F4125BAD46F0028C4FE /* SVProgressHUD.bundle */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		34CDCAA5DDF8E76356788E43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EBBA3E82D1CC2F93F7F2DB8 /* Pods-Downloader.debug.xcconfig */,
+				3ECAA11DC4F9F84020E0B6D2 /* Pods-Downloader.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E3B00DAB4D313B5B1769D83E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25333F61192258ED31952A0A /* Pods_Downloader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0312067825AEC24400120B72 /* Downloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031206A825AEC24700120B72 /* Build configuration list for PBXNativeTarget "Downloader" */;
+			buildPhases = (
+				299C177AA3A212F1E15E49B7 /* [CP] Check Pods Manifest.lock */,
+				0312067525AEC24400120B72 /* Sources */,
+				0312067625AEC24400120B72 /* Frameworks */,
+				0312067725AEC24400120B72 /* Resources */,
+				7B6D01E19FB2AAB24B1F43CE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Downloader;
+			productName = Downloader;
+			productReference = 0312067925AEC24400120B72 /* Downloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0312069325AEC24700120B72 /* DownloaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031206AB25AEC24700120B72 /* Build configuration list for PBXNativeTarget "DownloaderTests" */;
+			buildPhases = (
+				0312069025AEC24700120B72 /* Sources */,
+				0312069125AEC24700120B72 /* Frameworks */,
+				0312069225AEC24700120B72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0312069625AEC24700120B72 /* PBXTargetDependency */,
+			);
+			name = DownloaderTests;
+			productName = DownloaderTests;
+			productReference = 0312069425AEC24700120B72 /* DownloaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0312069E25AEC24700120B72 /* DownloaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 031206AE25AEC24700120B72 /* Build configuration list for PBXNativeTarget "DownloaderUITests" */;
+			buildPhases = (
+				0312069B25AEC24700120B72 /* Sources */,
+				0312069C25AEC24700120B72 /* Frameworks */,
+				0312069D25AEC24700120B72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				031206A125AEC24700120B72 /* PBXTargetDependency */,
+			);
+			name = DownloaderUITests;
+			productName = DownloaderUITests;
+			productReference = 0312069F25AEC24700120B72 /* DownloaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0312067125AEC24400120B72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					0312067825AEC24400120B72 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					0312069325AEC24700120B72 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 0312067825AEC24400120B72;
+					};
+					0312069E25AEC24700120B72 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 0312067825AEC24400120B72;
+					};
+				};
+			};
+			buildConfigurationList = 0312067425AEC24400120B72 /* Build configuration list for PBXProject "Downloader" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0312067025AEC24400120B72;
+			productRefGroup = 0312067A25AEC24400120B72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0312067825AEC24400120B72 /* Downloader */,
+				0312069325AEC24700120B72 /* DownloaderTests */,
+				0312069E25AEC24700120B72 /* DownloaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0312067725AEC24400120B72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0312068C25AEC24600120B72 /* LaunchScreen.storyboard in Resources */,
+				0312068925AEC24600120B72 /* Assets.xcassets in Resources */,
+				0312068725AEC24400120B72 /* Main.storyboard in Resources */,
+				039B1F4425BAD46F0028C4FE /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0312069225AEC24700120B72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0312069D25AEC24700120B72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		299C177AA3A212F1E15E49B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Downloader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B6D01E19FB2AAB24B1F43CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Downloader/Pods-Downloader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Downloader/Pods-Downloader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Downloader/Pods-Downloader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0312067525AEC24400120B72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039B1F3725BAD1780028C4FE /* YCDownloaderManager.m in Sources */,
+				0312068425AEC24400120B72 /* ViewController.m in Sources */,
+				039B1F2E25BAD1590028C4FE /* YCDownloader.m in Sources */,
+				039B1F4325BAD46F0028C4FE /* SVIndefiniteAnimatedView.m in Sources */,
+				039B1F4225BAD46F0028C4FE /* SVProgressHUD.m in Sources */,
+				0312067E25AEC24400120B72 /* AppDelegate.m in Sources */,
+				0312068F25AEC24600120B72 /* main.m in Sources */,
+				0312068125AEC24400120B72 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0312069025AEC24700120B72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0312069925AEC24700120B72 /* DownloaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0312069B25AEC24700120B72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031206A425AEC24700120B72 /* DownloaderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0312069625AEC24700120B72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0312067825AEC24400120B72 /* Downloader */;
+			targetProxy = 0312069525AEC24700120B72 /* PBXContainerItemProxy */;
+		};
+		031206A125AEC24700120B72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0312067825AEC24400120B72 /* Downloader */;
+			targetProxy = 031206A025AEC24700120B72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0312068525AEC24400120B72 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0312068625AEC24400120B72 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0312068A25AEC24600120B72 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0312068B25AEC24600120B72 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		031206A625AEC24700120B72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		031206A725AEC24700120B72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		031206A925AEC24700120B72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EBBA3E82D1CC2F93F7F2DB8 /* Pods-Downloader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Downloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tencent.Downloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		031206AA25AEC24700120B72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ECAA11DC4F9F84020E0B6D2 /* Pods-Downloader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Downloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tencent.Downloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		031206AC25AEC24700120B72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloaderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tencent.DownloaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Downloader.app/Downloader";
+			};
+			name = Debug;
+		};
+		031206AD25AEC24700120B72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloaderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tencent.DownloaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Downloader.app/Downloader";
+			};
+			name = Release;
+		};
+		031206AF25AEC24700120B72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tencent.DownloaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Downloader;
+			};
+			name = Debug;
+		};
+		031206B025AEC24700120B72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Tencent.DownloaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Downloader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0312067425AEC24400120B72 /* Build configuration list for PBXProject "Downloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031206A625AEC24700120B72 /* Debug */,
+				031206A725AEC24700120B72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		031206A825AEC24700120B72 /* Build configuration list for PBXNativeTarget "Downloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031206A925AEC24700120B72 /* Debug */,
+				031206AA25AEC24700120B72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		031206AB25AEC24700120B72 /* Build configuration list for PBXNativeTarget "DownloaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031206AC25AEC24700120B72 /* Debug */,
+				031206AD25AEC24700120B72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		031206AE25AEC24700120B72 /* Build configuration list for PBXNativeTarget "DownloaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031206AF25AEC24700120B72 /* Debug */,
+				031206B025AEC24700120B72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0312067125AEC24400120B72 /* Project object */;
+}
